@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>TO DO App</h1>
+    <div class="todo-container">
+      <div class="header">
+
+          <!-- <img src="" alt=""> -->
+          <button class="fa fa-refresh" onclick="delete_all();"></button>
+      </div>
+      <div class="list-pop">
+      <ul  id="list"></ul>
+    </div>
+ <div class="todo-display">
+     <input type="text" name="ToDo-item" id="ToDoitem" placeholder="Enter your Item">
+     <button class="add" onclick="addTodo();">ADD</button>
+ </div>
+    </div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDaELkP7l7uNjiYsWWEuNNhOyggQJfEsKI",
+    authDomain: "todo-app-b0342.firebaseapp.com",
+    databaseURL: "https://todo-app-b0342.firebaseio.com",
+    projectId: "todo-app-b0342",
+    storageBucket: "todo-app-b0342.appspot.com",
+    messagingSenderId: "411006571791",
+    appId: "1:411006571791:web:d535a4828e9ca48615da7a",
+    measurementId: "G-2182PJBTWC"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+  <script src="js/app.js"></script>  
+</body>
+</html>
